@@ -1,0 +1,138 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #1b4d3e;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 5px solid #8fcb9b;
+}
+
+header h1 span {
+    color: #8fcb9b;
+}
+
+/* Banner Principal */
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.banner h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+/* Cards dos Pilares */
+.pilares {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: -40px;
+    margin-bottom: 50px;
+}
+
+.card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    flex: 1;
+    text-align: center;
+    border-top: 4px solid #1b4d3e;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #1b4d3e;
+    margin-bottom: 15px;
+}
+
+/* Seção do Quiz */
+.quiz-section {
+    background-color: #e8f0ec;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.quiz-card {
+    background: #fff;
+    max-width: 600px;
+    margin: 30px auto 0 auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.pergunta {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.opcoes button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    background-color: #f0f0f0;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.2s;
+}
+
+.opcoes button:hover {
+    background-color: #1b4d3e;
+    color: white;
+    border-color: #1b4d3e;
+}
+
+#resultado-quiz {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Rodapé */
+footer {
+    background-color: #113327;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+/* Responsividade para Celulares */
+@media (max-width: 768px) {
+    .pilares {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+}
