@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoAgro Conectado - Agrinho 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>EcoAgro <span>Conectado</span></h1>
+            <p>Agro Forte, Futuro Sustentável</p>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="container">
+            <h2>O Equilíbrio entre Produção e Meio Ambiente</h2>
+            <p>Descubra como a tecnologia e as práticas sustentáveis garantem o alimento de amanhã sem destruir o planeta hoje.</p>
+        </div>
+    </section>
+
+    <section class="pilares container">
+        <div class="card">
+            <h3>Tecnologia no Campo</h3>
+            <p>Uso de drones, sensores IoT e inteligência artificial para aplicar água e insumos na quantidade exata, evitando desperdícios.</p>
+        </div>
+        <div class="card">
+            <h3>Preservação Ativa</h3>
+            <p>Manutenção de Áreas de Preservação Permanente (APPs) e Reservas Legais que protegem a biodiversidade e as fontes de água.</p>
+        </div>
+        <div class="card">
+            <h3>Rotação de Culturas</h3>
+            <p>Alternar espécies de plantas na mesma área melhora a saúde do solo, fixa nutrientes naturalmente e reduz pragas.</p>
+        </div>
+    </section>
+
+    <section class="quiz-section">
+        <div class="container">
+            <h2>Teste seus Conhecimentos Sustentáveis!</h2>
+            <p>Responda à pergunta abaixo e veja se você está pronto para o futuro do agro.</p>
+            
+            <div class="quiz-card">
+                <p class="pergunta">Qual das práticas abaixo ajuda a reter água no solo e reduzir a erosão?</p>
+                <div class="opcoes">
+                    <button onclick="verificarResposta(false)">A) Queimada controlada da palhada</button>
+                    <button onclick="verificarResposta(true)" id="correta">B) Sistema de Plantio Direto</button>
+                    <button onclick="verificarResposta(false)">C) Uso intensivo de tratores pesados</button>
+                </div>
+                <p id="resultado-quiz"></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 - Projeto Desenvolvido para o Concurso Agrinho</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
